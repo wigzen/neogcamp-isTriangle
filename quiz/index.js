@@ -47,7 +47,30 @@ const quizData = [
   d: "none of the above",
   correct: "c",
 },
-
+{
+  question: "<img alt='right' src='  https://quizizz.com/media/resource/gs/quizizz-media/questions/L2FwcGhvc3RpbmdfcHJvZC9ibG9icy9BRW5CMlVwaXUxTkR4YUVNZVFzTm9nRl84b2M5dWwwMVVYTHJQT2tSRUYxWl9JZjlWMVRZVElxQmV0M1VmbDBKX1loNExaTWRkRnpoY1V1Y21mcVB5aUZ1OHA3UmcyMnBNV0JvTDVqa0hJZEhlZWtxQkFVdkRway5QZWZRaGRrTjgwUTBMSVVD?w=600&h=600'> this triangle is",
+  a: "scalene",
+  b: "right",
+  c: "equilateral",
+  d: "none of the above",
+  correct: "c",
+},
+{
+  question: "<img alt='triangle img' src='https://quizizz.com/media/resource/gs/quizizz-media/questions/L2FwcGhvc3RpbmdfcHJvZC9ibG9icy9BRW5CMlVxVlBSaFdibzZWb1hVc056X2d3V1Z2d0IxVmgxMTF0eXhLYmg2S0xGT2phRFIxb3FtOVBnUmR0WUlMUVpvNlNLa1V2SmRhV2JZWEs1X2R1T2Y0R19kMVZxXzdGUS5aaDZpaFVrWDhuRVZGdURV?w=600&h=600'> this triangle is______",
+  a: "scalene",
+  b: "obtuse",
+  c: "Isosceles",
+  d: "none of the above",
+  correct: "c",
+},
+{
+  question: "<img alt='traingle img' src='https://lh4.googleusercontent.com/CJnrg9f-Qmzqt_WFjQigqm5PwsIpWODKjgxfCaKOvSWoBjaZoD9SO1hO9yddJ7BZe-oYe-UMjfJqGDukowrRJgha7eU5Ni-de_diMh-zzmV5sEt4Dqp77vw7aeQTjHW8jqkJUI18m1QcXCyAIg=s0'> this triangle is______",
+  a: "right angle",
+  b: "obtuse",
+  c: "Isosceles",
+  d: "none of the above",
+  correct: "b",
+},
 ];
 
 const quiz= document.getElementById('quiz')
@@ -71,7 +94,7 @@ function loadQuiz() {
 
   const currentQuizData = quizData[currentQuiz]
 
-  questionEl.innerText = currentQuizData.question
+  questionEl.innerHTML = currentQuizData.question
   a_text.innerText = currentQuizData.a
   b_text.innerText = currentQuizData.b
   c_text.innerText = currentQuizData.c
